@@ -1,0 +1,369 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.flex-center
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-Btn
+{
+	transition-duration: 1000ms;
+	font-weight: 500;
+	padding: 0.5rem 1.5rem;
+	background-color: rgb(255 0 189 / 1);
+	border-radius: 0.25rem;
+	margin: 0 1rem;
+	color: white;
+	outline: 1px solid white;
+}
+
+.link-Btn:hover
+{
+	outline-color: #ff00bd;
+	color: rgb(255 0 189 / 1);
+	background: white;
+}
+
+/* Header Style Start */
+
+.header
+{
+	position: sticky;
+	top: 0;
+	background: white;
+	box-shadow: 0 0 5px 0 lightgray;
+	height: 3.5rem;
+	z-index: 1000;
+}
+
+.header .brand 
+{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ff00bd;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.header .brand:hover
+{
+	color: #c000ff;
+}
+
+/* Header Style End	*/
+
+/* Hero Section Style Start  */
+
+.hero
+{
+	padding: 6rem 1.25rem;
+	background: rgb(243 244 246);
+}
+
+.hero .hero-INDiv
+{
+	width: 100%;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hero .hero-INDiv .HID-ChannelName
+{
+	color: rgb(99 102 241);    
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.hero .hero-INDiv .HID-AppName
+{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+    color:  rgb(17 24 39 / 1);
+    margin-bottom: 1rem;
+}
+
+.hero .hero-INDiv .HID-ClrDef
+{
+	width: 68%;
+	text-align: center;
+	line-height: 1.625;
+	font-weight: 500;
+}
+
+.hero .hero-INDiv .HID-BtnDiv
+{
+	margin-top: 1.25rem;
+	flex-wrap: wrap;
+}
+
+.hero .hero-INDiv .HID-BtnDiv .HID-BD-Link
+{
+	background-color: rgb(255 0 189 / 1);
+}
+
+.hero .hero-INDiv .HID-BtnDiv .HID-BD-Link:hover
+{
+	outline-color: #ff00bd;
+	background: white;
+}
+
+/* Hero Section Style End  */
+
+
+/* Sample Color Section Style Start */
+
+.SampleCLR-Con
+{
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 1.25rem;
+}
+
+.SampleCLR-Con .had 
+{
+	font-weight: 700;
+	font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.SampleCLR-Con .Color-Con
+{
+	flex-wrap: wrap;
+}
+
+.SampleCLR-Con .Color-Con .CLR-Div
+{
+	transition-duration: 1000ms;
+	width: 8rem;
+	height: 8rem;
+	margin-top: 1.5rem;
+}
+
+.SampleCLR-Con .Color-Con .CLR-Div:hover
+{
+	transform: translateY(-20px);
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0 5px 1px gray;
+}
+
+.SampleCLR-Con .More-BTN
+{
+	margin-top: 1.25rem;
+	background: deepskyblue;
+}
+
+.SampleCLR-Con .More-BTN:hover
+{
+	outline-color: deepskyblue;
+	color: deepskyblue;
+	background: white;
+}
+
+/* Sample Color Section Style End */
+
+/* About Section Style End */
+
+.About
+{
+	background-color: rgb(0 8 68 / 1);
+	border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    color: white;
+}
+
+.About .had 
+{
+	color: white;
+	font-weight: 700;
+	font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+
+.About .About-Details-Con
+{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	margin: 0.5rem 0;
+}
+
+.About .About-Details-Con .img 
+{
+	width: 4rem;
+	border-radius: 50%;
+	border: 2px dashed deeppink;
+}
+
+.About .About-Details-Con .name 
+{
+	margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.About .About-Details-Con .bio 
+{
+	margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.About .About-Details-Con .detail 
+{
+	margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.About .About-Details-Con .detail .label 
+{
+	font-weight: 700;
+	font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.About .About-Details-Con .detail .value 
+{
+	font-weight: 600;
+	font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.About .SML-had
+{
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+	text-align: center;
+}
+
+.About .btn-Div
+{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.About .btn-Div .link
+{
+	width: 20%;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+/* About Section Style End */
+
+/* Footer Style Sart */
+
+.footer
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2rem;
+	align-items: center;
+	background: #ededed;
+	box-shadow: inset 0 0 2px 2px lightgray;
+	color: rgb(255 0 141 / 1 );
+	font-family: sans-serif;
+	flex-wrap: wrap;
+}
+
+.footer h3
+{
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer p 
+{
+	font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Footer Style End */
+
+/*  Scroll Bar Style Start  */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#ff00f7, hsl(327deg 100% 50%));
+  border-radius: 36rem;  
+}
+
+/*  Scroll Bar Style End  */
+
+#loader
+{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: white url('../images/spinner.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1000;
+}
+
+/* Media Querys */
+
+@media screen and (max-width: 393px)
+{
+	.About .About-Details-Con 
+	{
+		align-items: center;
+	}
+
+	.About .About-Details-Con .bio 
+	{
+		text-align: center;
+	}
+
+	.About .btn-Div .link 
+	{
+		width: 5rem;
+	}
+}

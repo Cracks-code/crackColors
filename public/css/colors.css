@@ -1,0 +1,184 @@
+
+#backToHome
+{
+	position: fixed;
+	bottom: 0.5rem;
+	left: 42%;
+	width: 6.5rem;
+	height: 2.5rem;
+	background: deeppink url('../images/icons/home-solid.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5rem;
+	border-radius: 5px 0 0 5px;
+	transition: 0.57s;
+}
+
+#backToHome:hover
+{
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+
+#ScTop
+{
+	position: fixed;
+	bottom: 0.5rem;
+	left: 52%;
+	width: 6.5rem;
+	height: 2.5rem;
+	background: deeppink;
+	font-family: cursive;
+	font-size: 1.2rem;
+	font-weight: 1000;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	transition: 0.57s;
+	color: white;
+}
+
+#ScTop:hover
+{
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+#top 
+{
+	display: none;
+}
+
+/* Color Section Style Start */
+
+.Main-Color-Sec
+{
+	margin-top: 1.8rem;
+	padding: 0 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.Main-Color-Sec .had 
+{
+	font-size: 2.25rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #222222;
+	text-align: center;
+}
+
+.Main-Color-Sec .CLR-container
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.Main-Color-Sec .CLR-container .color-con
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 16rem;
+	height: 20rem;
+	padding: 1rem;
+	margin: 1.25rem 0.5rem;
+	border-radius: 5px;
+    box-shadow: 0 20px 25px -5px lightgray, 0 8px 10px -6px lightgray;
+    cursor: pointer;
+    transition: all 0.57s;
+}
+
+.Main-Color-Sec .CLR-container .color-con:hover
+{
+	box-shadow: 0 20px 40px -5px lightgray, 0 8px 25px -6px lightgray;
+}
+
+.Main-Color-Sec .CLR-container .color-con .color
+{
+	width: 90%;
+	height: 50%;
+	border-radius: 5px;
+}
+
+.Main-Color-Sec .CLR-container .color-con .value-copy
+{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0.5rem;
+	border: 1px dashed lightgray;
+	border-radius: 2px;
+	background: white;
+}
+
+.Main-Color-Sec .CLR-container .color-con .copy
+{
+	padding: 0.25rem;
+	border: none;
+	cursor: pointer;
+}
+
+.Main-Color-Sec .CLR-container .color-con .copy img
+{
+	width: 1rem;
+}
+
+.Main-Color-Sec .CLR-container .color-con .copy:hover
+{
+	opacity: 80%;
+}
+
+.Main-Color-Sec .CLR-container .color-con .name 
+{
+	padding: 0.5rem;
+	border: 1px dashed lightgray;
+	width: 80%;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+/* Color Section Style End */
+
+#loader
+{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: white url('../images/spinner.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1000;
+}
+
+/* Media Query */
+
+@media screen and (max-width:  600px)
+{
+	.Main-Search-Con .search-div
+	{
+		width: 20rem;
+	}
+
+	.Main-Search-Con
+	{
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width:  1400px)
+{
+	.Main-Color-Sec .container .color-con
+	{
+		width: 25vw;
+	}
+}
